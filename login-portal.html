@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login-portal.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+    <title>Login Portal</title>
+</head>
+<body>
+    <div class="details">
+        <div class="pic">
+            <img src="bg3.jpg">
+        </div>
+        <div id="container2">
+            <h1 id="txt1">Login Here</h1>
+            <form id="form">
+               <h2 id="username">Username</h2> <input type="text" placeholder="Username" name="username" id="username1">
+               <h2 id="password">Password</h2>
+               <input type="password" placeholder="Password" name="password" id="pass">
+               <input type="submit" value="Login" id="btn" name="login">
+            </form>
+            <h4 id="txt2"><a href="#" onclick="signup1()" id="signup1">New to us</a></h4><h4 id="txt3"><a href="" id="forgot">Forgot Password</a></h4>
+        </div>
+        <div id="container3">
+            <h1>Signup</h1>
+            <form method="post" action="login-portal.php" id="form1">
+                <input type="text" placeholder="Name" name="Name" id="text" >
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <input type="password" placeholder="Set Password" name="Password" id="password1">
+                <input type="submit" value="Signup" id="btn1" name="Submit">
+            </form>
+            <h4><a onclick="login1()" id="txt4">Already having an account?</a></h4>
+    </div>
+</body>
+</html>

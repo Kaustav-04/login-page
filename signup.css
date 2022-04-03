@@ -1,0 +1,87 @@
+#body{
+    background-color: rgb(170, 169, 169);
+}
+#container3{
+    background-color: rgb(255, 255, 255);
+    padding-top: 5%;
+    justify-content: center;
+    height:100%;
+    width:50%;
+    right:0%;
+    top:0;
+    position: relative;
+    box-shadow: black 5px 5px 8px 2px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    border-left:black solid 2.5px;
+    
+}
+@media(max-width:740px){
+    #container3{
+        width:100%;
+    }
+}
+
+#container3 h1{
+    font-size: 2.5rem;
+}
+input[type="password"], input[type="text"], input[type="email"]{
+    border:none;
+    border-radius: 2px;
+    padding:10px;
+    text-align: center;
+    background-color: transparent;
+    border-bottom: black solid 2px;
+    outline:none;
+}
+#form1{
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+    'username'
+    'email'
+    'password'
+    'button'
+    ;
+}
+#password1{
+    grid-area: password;
+    font-size: 1.5rem;
+}
+#text{
+    grid-area: username;
+    font-size: 1.5rem;
+}
+#email{
+    grid-area: email;
+    font-size: 1.5rem;
+}
+#btn1{
+    grid-area: button;
+    margin-top: 20px;
+    border-radius: 20px;
+    width:100px;
+    padding: 10px;
+    margin-left: 100px;
+    font-size: 1.5rem;
+}
+#txt4{grid-area: txt1; text-align: center; text-decoration: none; color:black; font-size: 2rem;}
+input[type="submit"]:hover{
+    background-color: black;
+    transition: 0.5s;
+    color:whitesmoke;   
+}
+#txt4:hover{
+    text-decoration: underline;
+}
+@media(max-width:350px){
+    #container3{
+        width:100%;
+        height: auto;
+        min-height: 450px;
+    }
+}

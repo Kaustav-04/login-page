@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding: 0;
+    cursor: pointer;
+}
+#body{
+    background-color: rgb(170, 169, 169);
+    margin:0;
+    padding: 0;
+    cursor: pointer;
+}
+#container2{
+    background-color: rgb(255, 255, 255);
+    padding-top: 5%;
+    justify-content: center;
+    height:100%;
+    width:50%;
+    right:0;
+    top:0;
+    position: relative;
+    border-left:black solid 2.5px;
+    
+    display: grid;
+    grid-template-areas: 
+    'txt1'
+    'form'
+    'txt2'
+    'txt3';
+    box-sizing: border-box;
+
+}
+@media(max-width:350px){
+    #password1, #btn1, #text, #email,#txt4{
+        font-size: 1.2rem;
+    }
+    #password1, #text, #email{
+        padding:5px 0px;
+    }
+}
+@media(max-width:740px){
+    #container2{
+        width:100%;
+    }
+}
+#pass, #username1{
+    border:none;
+    border-radius: 2px;
+    padding:10px;
+    text-align: center;
+    background-color: transparent;
+    border-bottom: black solid 2px;
+    outline:none;
+    margin-top:-10px;
+}
+#form{
+    grid-area: form;
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+    'text1' 'username'
+    'text2' 'password'
+    'button' 'button'
+    ;
+}
+#pass{
+    grid-area: password;
+    margin-top: -10%;
+}
+#username1{
+    grid-area: username;
+    margin-top: 10%;
+}
+#username{
+    grid-area: text1;
+    margin-top: -10%;
+}
+#password{
+    grid-area: text2;
+    margin-top: 10%;
+}
+#btn{
+    grid-area: button;
+    margin-top: 20px;
+    border-radius: 20px;
+    width:150px;
+    padding: 10px;
+    margin-left: 20px;
+    font-size: 1.3rem;
+    margin-bottom:10%;
+}
+#forgot, #signup1{
+    text-decoration: none;
+    color:black;
+}
+#forgot{
+    margin-top:-40px;
+}
+#txt1{grid-area: txt1; text-align: center;}
+#txt2{grid-area: txt2; text-align: center; font-size: 1.5rem;margin-top:10%}
+#txt3{grid-area: txt3; text-align: center; margin-top: -25px; font-size: 1.5rem;}
+input[type="submit"]:hover{
+    background-color: black;
+    transition: 0.44s;
+    color:whitesmoke;   
+}
+#txt2:hover, #txt3:hover{
+    text-decoration: underline;
+}
+@media(max-width:350px){
+    #container1{
+        width:100%;
+        height: auto;
+        min-height: 450px;
+    }
+}
